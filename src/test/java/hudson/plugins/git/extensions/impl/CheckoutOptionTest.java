@@ -99,5 +99,10 @@ public class CheckoutOptionTest {
         public void execute() throws GitException, InterruptedException {
             throw new UnsupportedOperationException("Don't call me");
         }
+
+		@Override
+		public CheckoutCommand withLFS() {
+            throw new UnsupportedOperationException("Don't call me");
+		}
     }
 }
